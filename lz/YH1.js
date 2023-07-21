@@ -1,4 +1,6 @@
 function en() {
+    $("body").append("< div className =\"box\"><div className=\"bg-movie\" id =\"dplayer\" > </div></div>")
+    $(".box").append("<div class=\"list-bg\"></div>")
     var lists=new Array();
         var x=0;
         var list = $("body").text().match(/htt.*?m3u8/g);
@@ -6,16 +8,13 @@ function en() {
             if(list[i]!="htt.*?m3u8"){
                 lists[x]=list[i];
                 x=x+1;
+                $(".list-bg").append("<input onclick=\"opensss('"+ lists[i] + "')\" type=\"button\" value=\"第" + (i + 1) + "集>")
+                console.log(lists[i])
             }
         }
 
-    $("body").append(`< div className ="box"><div className="bg-movie" id ="dplayer" > </div></div>`)
-    $(".box").append("<div class=\"list-bg\"></div>")
-    for (var i = 0; i < lists.length; i++) {
-       $(".list-bg").append("<div class='sss'>sss</div>")
-        $(".list-bg").append("<input onclick=\"opensss('"+ lists[i] + "')\" type=\"button\" value=\"第" + (i + 1) + "集>")
-        console.log(lists[i])
-    }
+
+
 }
 function opensss(url) {
     const dp = new DPlayer({
