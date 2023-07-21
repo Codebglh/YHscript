@@ -16,9 +16,6 @@ function en() {
         console.log(lists[i])
     }
 }
-function sasa(){
-    console.log("sasa")
-}
 function opensss(url) {
     const dp = new DPlayer({
         container: $("#dplayer"),
