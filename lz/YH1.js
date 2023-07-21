@@ -1,5 +1,5 @@
 function en() {
-    $("body").append("< div class =\"box\"></div>")
+    addelement("body","< div class =\"box\"></div>")
     var lists=new Array();
         var x=0;
         var list = $("body").text().match(/htt.*?m3u8/g);
@@ -15,6 +15,11 @@ function en() {
 
 
 
+}
+
+
+function addelement(lo,element){
+    $(lo).append(element)
 }
 function opensss(url) {
     const dp = new DPlayer({
