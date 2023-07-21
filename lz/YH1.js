@@ -1,5 +1,5 @@
 function en() {
-    $("body").append("< div className =\"box\"></div>")
+    $("body").append("< div class =\"box\"></div>")
     var lists=new Array();
         var x=0;
         var list = $("body").text().match(/htt.*?m3u8/g);
