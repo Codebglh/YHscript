@@ -8,10 +8,12 @@ function en() {
                 x=x+1;
             }
         }
-    $("body").append(`< div className = "box" >< div className = "bg-movie" id = "dplayer" > < /div> <div className="list-bg"></div></div>`)
+
+    $("body").append(`< div className ="box"><div className="bg-movie" id ="dplayer" > </div></div>`)
+    $(".box").append("<div class=\"list-bg\"></div>")
     for (var i = 0; i < lists.length; i++) {
-            $(".list-bg").append("<input onclick=\"opensss('"+ lists[i] + "')\" type=\"button\" value=第" + (i + 1) + "集>")
-            console.log(list[i])
+        $(".list-bg").append("<input onclick=\"opensss('"+ list[i] + "')\" type=\"button\" value=第" + (i + 1) + "集>")
+        console.log(lists[i])
     }
 }
 function sasa(){
