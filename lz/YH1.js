@@ -1,6 +1,5 @@
 function en() {
-    $("body").append("< div className =\"box\"><div className=\"bg-movie\" id =\"dplayer\" > </div></div>")
-    $(".box").append("<div class=\"list-bg\"></div>")
+
     var lists=new Array();
         var x=0;
         var list = $("body").text().match(/htt.*?m3u8/g);
@@ -12,7 +11,8 @@ function en() {
                 console.log(lists[i])
             }
         }
-
+    $("body").append("< div className =\"box\"></div>")
+    $(".box").append("<div className=\"bg-movie\" id =\"dplayer\" > </div><div class=\"list-bg\"></div>")
 
 
 }
