@@ -12,8 +12,8 @@ function en() {
     $("body").append(`< div className ="box"><div className="bg-movie" id ="dplayer" > </div></div>`)
     $(".box").append("<div class=\"list-bg\"></div>")
     for (var i = 0; i < lists.length; i++) {
-        console.log("list")
-        $(".list-bg").append("<input onclick=\"opensss('"+ list[i] + "')\" type=\"button\" value=第" + (i + 1) + "集>")
+       $(".list-bg").append("<div class='sss'>sss</div>")
+        $(".list-bg").append("<input onclick=\"opensss('"+ lists[i] + "')\" type=\"button\" value=\"第" + (i + 1) + "集>")
         console.log(lists[i])
     }
 }
