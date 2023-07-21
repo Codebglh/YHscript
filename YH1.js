@@ -1,9 +1,5 @@
 function en() {
-   // $(".bgcode").hide()
-
     var lists=new Array();
-
-
         var x=0;
         var list = $("body").text().match(/htt.*?m3u8/g);
         for (var i=0;i<list.length;i++){
@@ -12,11 +8,7 @@ function en() {
                 x=x+1;
             }
         }
-
-
     $("body").append(`< div className = "box" >< div className = "bg-movie" id = "dplayer" > < /div> <div className="list-bg"></div></div>`)
-
-
     for (var i = 0; i < lists.length; i++) {
             $(".list-bg").append("<input onclick=\"opensss('"+ lists[i] + "')\" type=\"button\" value=第" + (i + 1) + "集>")
             console.log(list[i])
