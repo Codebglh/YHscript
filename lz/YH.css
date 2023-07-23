@@ -19,11 +19,12 @@
 }
 .list_input {
     width: 60px;
+    color: #34dcd8;
     height: 30px;
     border-radius: 4px;
     margin-top: 5px;
     margin-right: 5px;
-    background-color: #ead067;
+    background-color:#666f;
     border: 0px;
     z-index: 999;
 }
