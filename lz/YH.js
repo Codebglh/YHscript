@@ -18,7 +18,7 @@ function en() {
             }
         }
     }else {
-        $(".box").remove();
+        $(".box_bg").remove();
         $("body").show();
         box=true;
     }

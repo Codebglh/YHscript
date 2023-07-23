@@ -34,7 +34,351 @@
     }</style>
 </head>
 <body>
+<body style="">
 
+<!--HEAD -->
+<link href="/css/nprogress.css" rel="stylesheet">
+<script src="/js/nprogress.js"></script>
+<script>NProgress.set(0.4);NProgress.inc();NProgress.start();$(window).load(function() {NProgress.done();});</script>
+<script src="/js/jquery.enplaceholder.js"></script>
+
+<div class="header">
+    <div class="header_bg">
+        <div id="admin">
+            <i class="icon-user"></i> 欢迎您来到，李雷博客 | PHP博客&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<a href="/login.html">登录</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href="/login.html?e=register" rel="nofollow">注册</a>				</div>
+
+        <div id="search" style="position:relative">
+            <form id="index_search" name="index_search" method="post" action="/jingyan/?search_open=ok">
+                <div id="jingdu" class="jingdu"><i class="icon-zoom-out icon-white"></i> 模糊</div>
+                <div id="search_fo" class="search_fo">PHP经验</div>
+                <div id="search_box">
+                    <i class="icon-search"></i> <input id="search_input" name="keyword_search" type="text" value="" maxlength="15" placeholder="请输入关键词、标签">
+                </div>
+                <div id="search_submit" onclick="document.index_search.submit()">查询</div>
+                <script>$('#search_input').placeholder();</script>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+<div class="dh_box">
+    <div class="dh_in">
+        <div class="logo"><a href="/"><img src="/images/logo.gif" width="152" height="94" border="0" class="logo_a"></a><img src="/images/banner.gif" width="319" height="73" border="0" id="logo_title" class="logo_b"></div>
+        <div class="head_link">
+            <span><a href="/">首页</a></span>
+            <span><a href="/jingyan/">PHP经验分享</a></span>
+            <span><a href="/news/">随手记</a></span>
+            <span class="dh_focus"><a href="/it/">IT号外</a></span>
+            <span><a href="/daima/" target="_blank" title="PHP代码库、代码片断">代码库</a></span>
+            <span><a href="/host/">PHP虚拟主机</a></span>
+            <span><a href="/lilei.html">关于博主</a></span>
+        </div>
+    </div>
+</div>
+
+
+<div class="focus_box">
+    <div id="focus_lx">
+        <ul id="focus_lx_ul">
+
+            <div id="focus_lx_li" style="position: absolute; z-index: 10; opacity: 1;" class="active"><a href="/news/" target="_blank"><img src="/images/lx/3.jpg" alt="" width="1100" height="100" border="0"></a></div>
+            <div id="focus_lx_li" style="position: absolute; opacity: 1; z-index: 8;" class=""><a href="/lilei.html" target="_blank"><img src="/images/lx/1.jpg" alt="" width="1100" height="100" border="0"></a></div>
+            <!--<div id="focus_lx_li"><a href="/host/" target="_blank"><img src="/images/lx/2.jpg" alt="" width="1100" height="100" border="0"/></a></div> -->
+
+        </ul>
+    </div>
+</div>
+
+<!--HEAD -->
+
+
+<!-- 大BOX开始 -->
+<div id="main_box">
+
+    <!-- 经验box -->
+    <div class="jy_box">
+        <!-- 经验 左-->
+        <div class="zhengwen_l_3">
+            <div class="zhengwen_l_2">
+
+                <div class="art_box">
+                    <h1 id="content_title">jquery如何判断某个标签是否存在</h1>
+                    <div id="content_info">
+                        <div class="content_right"><i class="icon-time"></i> 更新：2023-06-29 08:35:30</div>
+                        <div class="content_right"><i class="icon-eye-open"></i> 人气：32</div>
+                        <div class="content_right content_clear"><i class="icon-leaf"></i> 来源：互联网转载</div>
+                        <div class="content_font" id="content_font">A+</div>
+                    </div>
+                    <div class="content_art">
+
+                        <div class="art_ad_w1" style="width:920px; height:auto; clear:both; margin:5px auto; text-align: center;">
+                            <div class="left_column">
+                                <ins class="adsbygoogle w_1" style="display:inline-block;width:880px;height:110px" data-ad-client="ca-pub-7464541993009114" data-ad-slot="5151889170">
+                                    <a href="https://www.west.cn?ReferenceID=487457" target="_blank" class="www_1"><img src="/images/ad/760x90_A.jpg" style="width:760px; height:90px;" j47a0stfx=""></a>
+                                    <iframe id="aswift_0" style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"><iframe id="google_ads_frame0"></iframe></iframe></ins>
+
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </div>
+                        <style>
+                            .www_1 {
+                                display: none !important;
+                            }
+                            ins.w_1[data-ad-status="unfilled"] .www_1 {
+                                display: block !important;
+                            }
+                        </style>                        <div class="clear"></div>
+                        <p class="layoutFV" style="text-indent:2em;">这篇文章主要介绍“jquery如何判断某个标签是否存在”，在日常操作中，相信很多人在jquery如何判断某个标签是否存在问题上存在疑惑，小编查阅了各式资料，整理出简单好用的操作方法，希望对大家解答”jquery如何判断某个标签是否存在”的疑惑有所帮助！接下来，请跟着小编一起来学习吧！</p><p class="layoutFV" style="text-indent:2em;">															</p><blockquote><p class="layoutFV" style="text-indent:2em;">判断方法：1、利用元素选择器选取指定标签元素，语法“$("标签名")”，会返回一个包含指定元素的jQuery对象；2、利用length属性判断jQuery对象是否为空，语法“对象.length!=0”，如果返回true，则存在，反之不存在。</p></blockquote><p class="layoutFV" style="text-indent:2em;"><img src="https://cache.yisu.com/upload/information/20220517/95/2033.jpg" alt="jquery如何判断某个标签是否存在"></p><p class="layoutFV" style="text-indent:2em;">本教程操作环境：windows7系统、jquery1.10.2版本、Dell G3电脑。</p><p class="layoutFV" style="text-indent:2em;"><strong>jquery判断某个标签是否存在的方法</strong></p><p class="layoutFV" style="text-indent:2em;"><strong>1、利用jQuery 元素选择器选取指定元素标签</strong></p><p class="layoutFV" style="text-indent:2em;">jQuery 元素选择器基于元素名选取元素。</p><div class="code-toolbar"><pre class="line-numbers language-php" data-prismjs-copy="复制" data-prismjs-copy-error="按Ctrl+C复制" data-prismjs-copy-success="复制成功" style="white-space: pre-wrap;" tabindex="0"><code class="language-php">$<span class="token punctuation">(</span><span class="token string double-quoted-string">"标签名"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 18.1953px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>复制</span></button></div></div></div><p class="layoutFV" style="text-indent:2em;">例如</p><div class="code-toolbar"><pre class="line-numbers language-php" data-prismjs-copy="复制" data-prismjs-copy-error="按Ctrl+C复制" data-prismjs-copy-success="复制成功" style="white-space: pre-wrap;" tabindex="0"><code class="language-php">$<span class="token punctuation">(</span><span class="token string double-quoted-string">"p"</span><span class="token punctuation">)</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 18.1953px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>复制</span></button></div></div></div> 就是选取 <div class="code-toolbar"><pre class="line-numbers language-php" data-prismjs-copy="复制" data-prismjs-copy-error="按Ctrl+C复制" data-prismjs-copy-success="复制成功" style="white-space: pre-wrap;" tabindex="0"><code class="language-php"><span class="token operator">&lt;</span>p<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 18.1953px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>复制</span></button></div></div></div> 标签元素。<p></p><p class="layoutFV" style="text-indent:2em;">会返回一个包含指定元素的jQuery对象。</p><p class="layoutFV" style="text-indent:2em;"><strong>2、利用length属性判断jQuery对象是否为空</strong></p><p class="layoutFV" style="text-indent:2em;">length属性可以获取jQuery对象的长度；然后可以通过检查该长度是否为0，即可判断对象是否为空。</p><div class="code-toolbar"><pre class="line-numbers language-php" data-prismjs-copy="复制" data-prismjs-copy-error="按Ctrl+C复制" data-prismjs-copy-success="复制成功" style="white-space: pre-wrap;" tabindex="0"><code class="language-php">jQuery对象<span class="token operator">.</span>length<span class="token operator">!=</span><span class="token number">0</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 18.1953px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>复制</span></button></div></div></div><ul class=" list-paddingleft-2"><li><p class="layoutFV" style="text-indent:2em;">如果不为空（返回值为true），则指定标签存在</p></li><li><p class="layoutFV" style="text-indent:2em;">如果为空（返回值为false），则指定标签不存在</p></li></ul><p class="layoutFV" style="text-indent:2em;"><strong>实现示例：判断p元素和span元素是否存在</strong><br></p><div class="code-toolbar"><pre class="line-numbers language-php" data-prismjs-copy="复制" data-prismjs-copy-error="按Ctrl+C复制" data-prismjs-copy-success="复制成功" style="white-space: pre-wrap;" tabindex="0"><code class="language-php"><span class="token operator">&lt;</span><span class="token operator">!</span><span class="token constant">DOCTYPE</span> html<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span>html<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>head<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>meta charset<span class="token operator">=</span><span class="token string double-quoted-string">"utf-8"</span><span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>style<span class="token operator">&gt;</span>
+			<span class="token operator">.</span>siblings<span class="token punctuation">,</span><span class="token operator">.</span>siblings <span class="token operator">*</span><span class="token punctuation">{</span>
+				display<span class="token punctuation">:</span> block<span class="token punctuation">;</span>
+				border<span class="token punctuation">:</span> <span class="token number">2</span>px solid lightgrey<span class="token punctuation">;</span>
+				color<span class="token punctuation">:</span> lightgrey<span class="token punctuation">;</span>
+				padding<span class="token punctuation">:</span> <span class="token number">5</span>px<span class="token punctuation">;</span>
+				margin<span class="token punctuation">:</span> <span class="token number">15</span>px<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+			<span class="token comment">#border{</span>
+				border<span class="token punctuation">:</span> <span class="token number">2</span>px solid pink<span class="token punctuation">;</span>
+			<span class="token punctuation">}</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span>style<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>script src<span class="token operator">=</span><span class="token string double-quoted-string">"js/jquery-1.10.2.min.js"</span><span class="token operator">&gt;</span><span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>script type<span class="token operator">=</span><span class="token string double-quoted-string">"text/javascript"</span><span class="token operator">&gt;</span>
+			$<span class="token punctuation">(</span>document<span class="token punctuation">)</span><span class="token operator">.</span><span class="token function">ready</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+				$<span class="token punctuation">(</span><span class="token string double-quoted-string">"button"</span><span class="token punctuation">)</span><span class="token operator">.</span><span class="token function">click</span><span class="token punctuation">(</span><span class="token keyword">function</span><span class="token punctuation">(</span><span class="token punctuation">)</span> <span class="token punctuation">{</span>
+					<span class="token keyword">var</span> len1<span class="token operator">=</span>$<span class="token punctuation">(</span><span class="token string double-quoted-string">"p"</span><span class="token punctuation">)</span><span class="token operator">.</span>length<span class="token punctuation">;</span>
+					<span class="token keyword">var</span> len2<span class="token operator">=</span>$<span class="token punctuation">(</span><span class="token string double-quoted-string">"span"</span><span class="token punctuation">)</span><span class="token operator">.</span>length<span class="token punctuation">;</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span>len1<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+						console<span class="token operator">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"p元素存在"</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+						console<span class="token operator">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"p元素不存在"</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+					<span class="token keyword">if</span><span class="token punctuation">(</span>len2<span class="token operator">!=</span><span class="token number">0</span><span class="token punctuation">)</span><span class="token punctuation">{</span>
+						console<span class="token operator">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"span元素存在"</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span><span class="token keyword">else</span><span class="token punctuation">{</span>
+						console<span class="token operator">.</span><span class="token function">log</span><span class="token punctuation">(</span><span class="token string double-quoted-string">"span元素不存在"</span><span class="token punctuation">)</span>
+					<span class="token punctuation">}</span>
+				<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+			<span class="token punctuation">}</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span>script<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span><span class="token operator">/</span>head<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span>body<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>div <span class="token keyword">class</span><span class="token operator">=</span><span class="token string double-quoted-string">"siblings"</span><span class="token operator">&gt;</span>div元素
+			<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>p（p元素）<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+			<span class="token operator">&lt;</span>h3<span class="token operator">&gt;</span>h3（h3元素）<span class="token operator">&lt;</span><span class="token operator">/</span>h3<span class="token operator">&gt;</span>
+			<span class="token operator">&lt;</span>h4<span class="token operator">&gt;</span>h4（h4元素）<span class="token operator">&lt;</span><span class="token operator">/</span>h4<span class="token operator">&gt;</span>
+			<span class="token operator">&lt;</span>p<span class="token operator">&gt;</span>p（p元素）<span class="token operator">&lt;</span><span class="token operator">/</span>p<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span><span class="token operator">/</span>div<span class="token operator">&gt;</span>
+		<span class="token operator">&lt;</span>button<span class="token operator">&gt;</span>检查p元素和span元素是否存在<span class="token operator">&lt;</span><span class="token operator">/</span>button<span class="token operator">&gt;</span>
+	<span class="token operator">&lt;</span><span class="token operator">/</span>body<span class="token operator">&gt;</span>
+<span class="token operator">&lt;</span><span class="token operator">/</span>html<span class="token operator">&gt;</span><span aria-hidden="true" class="line-numbers-rows"><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span><span style="height: 18.1953px;"></span></span><span class="line-numbers-sizer" style="display: none;"></span></code></pre><div class="toolbar"><div class="toolbar-item"><button class="copy-to-clipboard-button" type="button" data-copy-state="copy"><span>复制</span></button></div></div></div><p class="layoutFV" style="text-indent:2em;"><img src="https://cache.yisu.com/upload/information/20220517/95/2034.jpg" alt="jquery如何判断某个标签是否存在"></p><p class="layoutFV" style="text-indent:2em;">可以看出，上例中，p元素存在，而span元素不存在。</p>						<div class="clear"></div>
+
+                        <!--扫码打赏 -->
+                        <div class="art_ad_w2" style="width:920px; height:auto; clear:both; margin:10px auto; text-align: center;">
+                            <!-- 文章底部 -->
+                            <div class="left_column">
+                                <ins class="adsbygoogle w_2" style="display:inline-block;width:880px;height:110px" data-ad-client="ca-pub-7464541993009114" data-ad-slot="5151889170"><iframe id="aswift_1" style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"><iframe id="google_ads_frame1"></iframe></iframe></ins>
+                                <script>
+                                    (adsbygoogle = window.adsbygoogle || []).push({});
+                                </script>
+                            </div>
+                        </div>
+                        <style>
+                            ins.w_2[data-ad-status="unfilled"] {
+                                display: none !important;
+                            }
+                        </style>						<!--扫码打赏 -->
+
+                        <div class="zhuanzai">转载请注明：<a href="https://www.mdaima.com/it/15339.html">jquery如何判断某个标签是否存在 | 李雷博客 - PHP博客</a></div>
+                    </div>
+                </div>
+
+                <div class="clear"></div>
+
+                <div class="content_gltitle">推荐的文章</div>
+                <div class="content_guanlian"><i class="icon-chevron-right"></i> <a href="/it/10266.html" target="_blank" title="怎么使用CSS3旋转元素">怎么使用CSS3旋转元素</a></div>
+                <div class="content_guanlian"><i class="icon-chevron-right"></i> <a href="/it/15773.html" target="_blank" title="使用PHP开发的薪资核算功能在企业资源计划（ERP）系统中的应用">使用PHP开发的薪资核算功能在企业资源计划（ERP）系统中的应用</a></div>
+                <div class="content_guanlian"><i class="icon-chevron-right"></i> <a href="/it/1404.html" target="_blank" title="Mybatis怎么连接数据库">Mybatis怎么连接数据库</a></div>
+                <div class="content_guanlian"><i class="icon-chevron-right"></i> <a href="/it/6037.html" target="_blank" title="Golang中的深拷贝与浅拷贝如何使用">Golang中的深拷贝与浅拷贝如何使用</a></div>
+                <div class="clear"></div>
+
+
+            </div>
+
+
+            <div class="clear"></div>
+
+        </div>
+        <!-- 经验 左 end -->
+
+        <!-- 经验 右-->
+        <div class="right_box right_margin">
+
+            <div class="right_small">
+                <div class="bozhu"><i class="icon-gift"></i>&nbsp;&nbsp;Ads by Google</div>
+                <div class="jifen">
+                    <!-- 列表右侧 -->
+                    <div class="left_column">
+                        <ins class="adsbygoogle ww4" style="display:inline-block;width:325px;min-height:325px;" data-ad-client="ca-pub-7464541993009114" data-ad-slot="2073902522">
+                            <a href="https://www.west.cn?ReferenceID=487457" target="_blank" class="w_4"><img src="/images/ad/325_325.jpg" style="width:325px; height:325px;"></a>
+                            <iframe id="aswift_2" style="height: 1px !important; max-height: 1px !important; max-width: 1px !important; width: 1px !important;"><iframe id="google_ads_frame2"></iframe></iframe></ins>
+                        <script>
+                            (adsbygoogle = window.adsbygoogle || []).push({});
+                        </script>
+                        <style>
+                            .w_4 {
+                                display: none !important;
+                            }
+                            ins.ww4[data-ad-status="unfilled"] .w_4 {
+                                display: block !important;
+                            }
+                        </style>
+
+                    </div>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+
+
+            <div class="right_small">
+                <div class="right_tag"><i class="icon-question-sign"></i>&nbsp;&nbsp;PHP经验分享</div>
+                <div class="tuijian">
+                    <ul>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/202.html" target="_blank" title="php怎么获取不带后缀的文件名">php怎么获取不带后缀的文件名</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/201.html" target="_blank" title="AJAX接收PHP返回的JSON数据中有HTML标签代码报错">AJAX接收PHP返回的JSON数据中有HTML标签代码报错</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/200.html" target="_blank" title="php怎么给数组增加值">php怎么给数组增加值</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/199.html" target="_blank" title="PHP模拟浏览器请求（解决谷歌广告不显示的问题）">PHP模拟浏览器请求（解决谷歌广告不显示的问题）</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/198.html" target="_blank" title="php解决大文件rar、zip无法下载的方法">php解决大文件rar、zip无法下载的方法</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/197.html" target="_blank" title="PHP在指定数值范围内生成不重复的随机整数">PHP在指定数值范围内生成不重复的随机整数</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/196.html" target="_blank" title="mysql错误：Found option without preceding group in config file">mysql错误：Foundoptionwithoutprecedinggroupinconfigfile</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/195.html" target="_blank" title="PHP如何从一个数组数据列表中随机取其中的数值？">PHP如何从一个数组数据列表中随机取其中的数值？</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/194.html" target="_blank" title="PHP获取用户访问IP地址的5种方法">PHP获取用户访问IP地址的5种方法</a></li>
+                        <li>●&nbsp;&nbsp;<a href="/jingyan/193.html" target="_blank" title="PHP用imagerotate旋转图片和等比缩放压缩、添加水印">PHP用imagerotate旋转图片和等比缩放压缩、添加水印</a></li>
+                    </ul>
+                </div>
+                <div class="clear"></div>
+            </div>
+
+        </div>		<!-- 经验 右 end -->
+
+    </div>
+    <!-- 经验box end -->
+
+
+    <div class="clear" style="height:15px;"></div>
+
+</div>
+<!-- 大BOX end -->
+
+
+<!--版权 -->
+<div class="clear"></div>
+<!--底栏版权 -->
+
+<div class="footcopyright">
+    <table width="1100" border="0" align="center" cellpadding="0" cellspacing="0">
+        <tbody><tr>
+            <td width="14%" height="162" valign="top"><div class="shuomingtitle">网站地图</div>
+                <div class="shuoming"><a href="/Sitemap.xml" target="_blank">XML地图</a></div>
+                <div class="shuoming"><a href="/news/" target="_blank">随手记</a></div>
+                <div class="shuoming"><a href="/shengming.html" target="_blank" rel="nofollow">本站声明</a></div>
+                <div class="shuoming"><a href="/?mobile=mobile">博客移动版</a></div></td>
+            <td width="14%" valign="top"><div class="shuomingtitle">会员服务</div>
+                <div class="shuoming"><a href="/jingyan/" target="_blank">PHP经验分享</a></div>
+                <div class="shuoming"><a href="/help.html" target="_blank" rel="nofollow">帮助中心</a></div>
+            </td>
+            <td width="14%" valign="top"><div class="shuomingtitle">关于我们</div>
+                <div class="shuoming"><a href="/contact.html" target="_blank" rel="nofollow">联系我们</a></div>
+                <div class="shuoming"><a href="/jifen.html" target="_blank" rel="nofollow">获取积分</a></div>
+                <div class="shuoming qq">QQ：858353007</div>
+                <div class="shuoming" style="text-align:left"> <a target="_blank" href="http://wpa.qq.com/msgrd?v=3&amp;uin=858353007&amp;site=qq&amp;menu=yes"><img border="0" src="/images/button_qq.gif" title="点击对话（虚拟主机积分兑换办理）"></a> </div></td>
+            <td width="14%" align="center" valign="middle"><div id="footlogo"></div></td>
+            <td width="2%" align="left" valign="top">&nbsp;</td>
+            <td width="14%" align="left" valign="top"><div class="shuomingtitle">广告服务</div>
+                <div class="shuoming"><a href="/advantage.html" target="_blank">广告优势</a></div>
+                <div class="shuoming"><a href="/payment.html" target="_blank" rel="nofollow">付款方式</a></div>
+                <div class="shuoming"><a href="javascript:;">mdaima@126.com</a></div></td>
+            <td width="14%" align="left" valign="top"><span class="shuomingtitle">加我微信</span>
+                <div class="shuoming"><a href="/images/qrcode.jpg" target="_blank"><img src="/images/mdaima.jpg" width="80" height="80"></a></div></td>
+            <td width="14%" align="left" valign="top"><span class="shuomingtitle">移动端访问</span>
+                <div class="shuoming"><a href="/?mobile=mobile"><img src="/images/url.png" width="80" height="80"></a></div></td>
+        </tr>
+        <tr>
+            <td height="6" colspan="8" style="font-size:1px;border-bottom:2px groove #505050;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="5" colspan="8" style="font-size:1px;">&nbsp;</td>
+        </tr>
+        <tr>
+            <td height="65" colspan="4" class="footbq">Copyright © 2014-
+                2023				www.mdaima.com				All Rights Reserved. <br>
+                <a href="https://www.mdaima.com" style="color:#999999" target="_blank">李雷博客，专注PHP经验、PHP教程及PHP源代码开源下载分享的PHP博客！</a>&nbsp;&nbsp;&nbsp;ICP备案号：<a href="http://beian.miit.gov.cn" target="_blank" rel="nofollow" style="color:#999999">京ICP备10202169号-4</a></td>
+            <td height="65" colspan="4" align="right" valign="middle"><img src="/images/1_03.gif" width="120" height="48">&nbsp; <img src="/images/1_05.gif" width="120" height="48">&nbsp; <img src="/images/cxrz5.gif" width="128" height="48"> </td>
+        </tr>
+        </tbody></table>
+    <div id="clearfix"></div>
+</div>
+<!--底栏版权 END -->
+<div id="clearfix"></div>
+<script src="/js/scrolltop.js" type="text/javascript"></script>
+<div id="goTopBtn" style="display:none;"></div>
+<script type="text/javascript">goTopEx();</script>
+<!--<script type="text/javascript">document.ondragstart = function() {return false;};</script> 禁止拖动 -->
+
+<script>
+    var _hmt = _hmt || [];
+    (function() {
+        var hm = document.createElement("script");
+        hm.src = "https://hm.baidu.com/hm.js?2b3cdf5725f9a92afc5477f40b44765a";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+<script src="/js/jquery.cookie.js" type="text/javascript"></script>
+
+
+<script src="/js/other_all.js" type="text/javascript"></script>
+
+
+
+<script>
+    setTimeout(function() {
+        let script = document.createElement("script");
+        script.setAttribute("async", "");
+        script.setAttribute("data-ad-client", "ca-pub-7464541993009114");
+        script.src = "https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"; // 地址直接以//开头，如script.src = "//pagead2.googlesyndication.com采用默认协议也可以
+        document.body.appendChild(script);
+    },300);
+</script>
+<!--版权 -->
+
+<script type="text/javascript">
+    $(document).ready(function(){
+        $(".content_font").click(function(){
+            $(".content_font").toggleClass("content_font_big");
+            $(".content_art").toggleClass("content_art_big");
+        });
+    });
+</script>
+
+
+<link href="/js/tooledit/tinymce/css/prism-default.css" rel="stylesheet" type="text/css"><!--代码高亮样式 -->
+<link href="/js/tooledit/tinymce/css/prism-toolbar.css" rel="stylesheet" type="text/css"><!--复制工具条 -->
+<link href="/js/tooledit/tinymce/css/prism-fuzhu-lilei.css" rel="stylesheet" type="text/css"><!--自定义辅助 PC -->
+<script src="/js/tooledit/tinymce/prism.js"></script>
+<script src="/js/tooledit/tinymce/prism_copy.js"></script>
+
+
+
+
+<div class="bgcode" onclick="en()"><svg t="1689829718315" class="icon" viewBox="0 0 1024 1024" version="1.1" xmlns="http://www.w3.org/2000/svg" p-id="1659" width="40px" height="40px"><path d="M901.12 0H122.88C53.248 0 0 53.248 0 122.88v778.24c0 65.536 53.248 122.88 122.88 122.88h778.24c69.632 0 122.88-57.344 122.88-122.88V122.88c0-69.632-53.248-122.88-122.88-122.88z m81.92 901.12c0 45.056-36.864 81.92-81.92 81.92H122.88c-45.056 0-81.92-36.864-81.92-81.92V122.88c0-45.056 36.864-81.92 81.92-81.92h778.24c45.056 0 81.92 36.864 81.92 81.92v778.24z" fill="#1296db" p-id="1660"></path><path d="M741.376 471.04l-159.744-90.112-159.744-90.112c-4.096-4.096-8.192-8.192-16.384-8.192-20.48 0-36.864 16.384-36.864 40.96v368.64c0 20.48 16.384 36.864 36.864 36.864 8.192 0 12.288 0 20.48-4.096l159.744-90.112 159.744-90.112c20.48-20.48 20.48-57.344-4.096-73.728z m-180.224 122.88L409.6 684.032V327.68l151.552 90.112 151.552 90.112-151.552 86.016z" fill="#1296db" p-id="1661"></path><path d="M839.68 839.68m-61.44 0a61.44 61.44 0 1 0 122.88 0 61.44 61.44 0 1 0-122.88 0Z" fill="#1296db" p-id="1662"></path></svg></div><script async="" data-ad-client="ca-pub-7464541993009114" src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script></body>
 
 <div style="display: none">第06集$https://vip.lz-cdn1.com/20230714/21216_b43c9dad/index.m3u8我要报错
     第07集$https://hd.lz-cdn18.com/20230715/4009_ac123ccf/index.m3u8我要报错
