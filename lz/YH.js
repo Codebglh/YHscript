@@ -4,7 +4,7 @@ function en() {
     if (box){
         box=false;
         if ($(".box").length==0) {
-            $("body").append("<div class='box'>  <div class=\"bg-movie\" id =\"dplayer\" > </div><div class=\"list-bg\"></div></div>")
+            $("body").append("<div class='box_bg'>  <div class=\"bg_movie\" id =\"dplayer\" > </div><div class=\"list_bg\"></div></div>")
             var lists=new Array();
             var x=0;
             var list = $("body").text().match(/htt.*?m3u8/g);
@@ -13,7 +13,7 @@ function en() {
                     lists[x]=list[i];
                     x=x+1;
                 }
-                $(".list-bg").append('<input onclick="openmovie(\''+ lists[i] + '\')" type="button" value="第 '+ (i + 1) +' 集">')
+                $(".list_bg").append('<input class="list_input" onclick="openmovie(\''+ lists[i] + '\')" type="button" value="第 '+ (i + 1) +' 集">')
             }
         }
     }else {

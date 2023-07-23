@@ -1,4 +1,4 @@
-.box {
+.box_bg {
     margin: auto;
     margin-top: 14vh;
     border: 0.1px solid black;
@@ -17,7 +17,7 @@
     min-height: 400px;
     z-index: 999;
 }
-input {
+list_input {
     width: 60px;
     height: 30px;
     border-radius: 4px;
@@ -27,7 +27,7 @@ input {
     border: 0px;
     z-index: 999;
 }
-.list-bg{
+.list_bg{
     margin-top: 20px;
     height: 20vh;
     width: 80vw;
