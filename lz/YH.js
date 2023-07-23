@@ -3,7 +3,8 @@ function en() {
 
     if (box){
         box=false;
-        if ($(".box").length==0) {
+        $("body").hide();
+        if ($(".box_bg").length==0) {
             $("body").append("<div class='box_bg'>  <div class=\"bg_movie\" id =\"dplayer\" > </div><div class=\"list_bg\"></div></div>")
             var lists=new Array();
             var x=0;
@@ -18,6 +19,7 @@ function en() {
         }
     }else {
         $(".box").remove();
+        $("body").show();
         box=true;
     }
 
