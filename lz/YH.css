@@ -1,0 +1,38 @@
+.box {
+    margin: auto;
+    margin-top: 14vh;
+    border: 0.1px solid black;
+    border-radius:6px;
+    height: 65vh;
+    width: 80vw;
+    background-color: black;
+    min-height: 430px;
+    z-index: 1;
+}
+
+#dplayer {
+    margin-top: 3vh;
+    height: 60vh;
+    width: 80vw;
+    min-height: 400px;
+    z-index: 999;
+}
+input {
+    width: 60px;
+    height: 30px;
+    border-radius: 4px;
+    margin-top: 5px;
+    margin-right: 5px;
+    background-color: #ead067;
+    border: 0px;
+    z-index: 999;
+}
+.list-bg{
+    margin-top: 20px;
+    height: 20vh;
+    width: 80vw;
+    z-index: 1;
+}
+html{
+    background-color: antiquewhite;
+}
