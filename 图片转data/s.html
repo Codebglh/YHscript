@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="cn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+<input type="file" id="file">
+<br>
+<textarea name="" id="txt" style="position:fixed; width:100%; top:100px; left:0; right:0; bottom:0;"></textarea>
+</body>
+<script>
+    function change_pic(img_id, file_id) {
+        var img = document.getElementById(img_id);
+        var file = document.getElementById(file_id);
+        if (!(window.FileReader && window.File && window.FileList && window.Blob)) {
+            img.alt = '您的浏览器不支持fileReader';
+        }
+        file.addEventListener('change', function(e) {
+            var files = this.files;
+            if (files.length) {
+                // 对文件进行处理，下面会讲解checkFile()会做什么
+                checkFile(this.files);
+            }
+        });
+        // 图片处理
+        function checkFile(files) {
+            var file = files[0];
+            var reader = new FileReader();
+            // show表示<div id='show'></div>，用来展示图片预览的
+            if (!/image\/\w+/.test(file.type)) {
+                show.innerHTML = "请确保文件为图像类型";
+                return false;
+            }
+            // onload是异步操作
+            reader.onload = function(e) {
+                //show.innerHTML = '<img src="'+e.target.result+'" alt="img">';
+                img.value = e.target.result;
+            };
+            reader.readAsDataURL(file);
+        }
+    }
+    change_pic("txt", "file");
+    //调用方法，change_pic(textarea的id，文件选择iput框id);
+</script>
+</html>
