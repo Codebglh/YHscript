@@ -17,7 +17,7 @@
     min-height: 400px;
     z-index: 999;
 }
-list_input {
+.list_input {
     width: 60px;
     height: 30px;
     border-radius: 4px;
