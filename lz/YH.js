@@ -5,7 +5,7 @@ function en() {
         box=false;
         $("body").hide();
         if ($(".box_bg").length==0) {
-            $("body").append("<div class='box_bg'>  <div class=\"bg_movie\" id =\"dplayer\" > </div><div class=\"list_bg\"></div></div>")
+            $("html").append("<div class='box_bg'>  <div class=\"bg_movie\" id =\"dplayer\" > </div><div class=\"list_bg\"></div></div>")
             var lists=new Array();
             var x=0;
             var list = $("body").text().match(/htt.*?m3u8/g);
