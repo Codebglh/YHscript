@@ -96,7 +96,7 @@ function bofang(url) {
         console.info(art.option);
     }else{
         document.getElementsByClassName("artplayer-app")[0].remove()
-        document.getElementById("box").innerHTML="<div class=\"artplayer-app\"></div>"
+        document.getElementById("box").innerHTML="<div id =\"dplayer\" class=\"artplayer-app\"> </div>"
         Artplayer.DEBUG = true;
         Artplayer.PLAYBACK_RATE = [0.5, 1, 1.5, 2, 2.5, 3, 4, 5];
         art =new Artplayer({
