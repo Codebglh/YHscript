@@ -94,7 +94,8 @@ function bofang(url) {
             },
         });
     }else{
-        document.getElementsByClassName("artplayer-app")[0].remove();
+        //document.getElementsByClassName("artplayer-app")[0].remove();
+        $(".artplayer-app").remove();
         $(".box_bg").append("<div id =\"dplayer\" class=\"artplayer-app\"> </div>");
       //  document.getElementById("box").innerHTML="<div id =\"dplayer\" class=\"artplayer-app\"> </div>"
         Artplayer.DEBUG = true;
