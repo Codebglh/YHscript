@@ -11,7 +11,7 @@ function en() {
             var x=0;
             var list = $("body").text().match(/htt.*?m3u8/g);
             for (var i=0;i<list.length;i++){
-                if(list[i]!="htt.*?m3u8"){
+                if(list[i]!="htt.*?m3u8"|list[i].length<=60){
                     lists[x]=list[i];
                     x=x+1;
                 }
