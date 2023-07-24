@@ -61,7 +61,7 @@ function bofang(url) {
             volume: 0.5, //初始音量
             theme: "#ffad00", //主题颜色ß
             type: "m3u8",
-            autoplay: true, //是否自动播放
+            autoplay: false, //是否自动播放
             //autoSize: true,//调节黑边
             autoMini: true, //离开页面变成小屏
             playbackRate: true, //播放速度
@@ -105,7 +105,7 @@ function bofang(url) {
             volume: 0.5, //初始音量
             theme: "#ffad00", //主题颜色ß
             type: "m3u8",
-            autoplay: true, //是否自动播放
+            autoplay: false, //是否自动播放
             //autoSize: true,//调节黑边
             autoMini: true, //离开页面变成小屏
             playbackRate: true, //播放速度
