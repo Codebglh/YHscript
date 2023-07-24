@@ -6,7 +6,7 @@ function en() {
         box=false;
         $("body").hide();
         if ($(".box_bg").length==0) {
-            $("html").append("<div class='box_bg'>  <div  id =\"dplayer\" class=\"artplayer-app\"> </div><div class=\"list_bg\"></div></div>")
+            $("html").append("<div class='box_bg'>  <div id='ss'><div  id =\"dplayer\" class=\"artplayer-app\"> </div></div><div class=\"list_bg\"></div></div>")
             var lists=new Array();
             var x=0;
             var list = $("body").text().match(/htt.*?m3u8/g);
@@ -94,10 +94,8 @@ function bofang(url) {
             },
         });
     }else{
-        //document.getElementsByClassName("artplayer-app")[0].remove();
         $(".artplayer-app").remove();
-        $(".box_bg").append("<div id =\"dplayer\" class=\"artplayer-app\"> </div>");
-      //  document.getElementById("box").innerHTML="<div id =\"dplayer\" class=\"artplayer-app\"> </div>"
+        $("#ss").append("<div id =\"dplayer\" class=\"artplayer-app\"> </div>");
         Artplayer.DEBUG = true;
         Artplayer.PLAYBACK_RATE = [0.5, 1, 1.5, 2, 2.5, 3, 4, 5];
         art =new Artplayer({

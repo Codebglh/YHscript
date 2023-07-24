@@ -37,6 +37,7 @@
 }
 .list_bg{
     margin-top: 20px;
+    position:fixed;
     height: 20vh;
     width: 80vw;
     z-index: 1;
