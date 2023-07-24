@@ -17,6 +17,13 @@
     min-height: 400px;
     z-index: 999;
 }
+.artplayer-app {
+    margin-top: 3vh;
+    height: 60vh;
+    width: 80vw;
+    min-height: 400px;
+    z-index: 999;
+}
 .list_input {
     width: 60px;
     color: #34dcd8;
