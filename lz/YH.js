@@ -35,7 +35,7 @@ function bgcode() {
         `);
             }
 
-            const aaa = get_value("playM3u8");
+            const aaa = get_value("playM3u8"+currentUrl);
             if (!aaa) {
                 bg_play(0);
             } else {
@@ -72,7 +72,7 @@ function bg_play(key) {
     }
     const url = lists[key].url;
     const id = `bgcode${key}`;
-    set_value("playM3u8", key);
+    set_value("playM3u8"+currentUrl, key);
     const button = document.getElementById(`button${key}`);
     button.style.color = "#9c18e8";
 

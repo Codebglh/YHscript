@@ -19,19 +19,21 @@ function bgcode() {
                     key:"1"
                 })
             }
-            var xxx = JSON.stringify(bgcode);
+            let aaaaa={};
+            aaaaa["lists"]=bgcode
+            aaaaa["playM3u8"]="0"
+            var xxx = JSON.stringify(aaaaa);
             // 从 localStorage 获取数据
             var dataStr = localStorage.getItem(currentUrl);
             if (!dataStr) {
                 localStorage.setItem(currentUrl, xxx);
             }
             var dataObj = JSON.parse(localStorage.getItem(currentUrl));
-
             for (var i = 0; i < list.length; i++) {
-                var color = dataObj[i].key === "1" ? "#34dcd8" : "#9c18e8";
+                var color = dataObj.lists[i].key === "1" ? "#34dcd8" : "#9c18e8";
                 $(".list_bg").append('<input class="list_input" id="button' + i + '" onclick="bg_play(' + i + ')" type="button" value="' + (i + 1) + '" style="color: ' + color + ';">');
             }
-            var aaa=get_value("playM3u8")
+            var aaa=JSON.parse(get_value("currentUrl"))[playM3u8]
 
             if(!aaa){
                 bg_play(0)
@@ -67,7 +69,7 @@ function bg_play(key) {
         art.destroy()
     }
     if (!lists) {
-        lists = JSON.parse(get_value(currentUrl))
+        lists = JSON.parse(get_value(currentUrl)).lists
     }
     var url = lists[key].url
     var id = "bgcode" + key.toString()
@@ -79,7 +81,7 @@ function bg_play(key) {
     var dataStr = localStorage.getItem(currentUrl);
     if (dataStr) {
         // 如果获取到数据，则解析为对象
-        var dataObj = JSON.parse(dataStr);
+        var dataObj = JSON.parse(dataStr).lists;
         // 更新对象的 url 属性
         dataObj[key].key = "0";
         // 将更新后的对象转换为字符串并存储回本地存储中
