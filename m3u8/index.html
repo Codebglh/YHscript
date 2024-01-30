@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>m3u8播放</title>
+    <script src='https://cdn.jsdelivr.net/npm/hls.js@1.2.7/dist/hls.min.js' type='text/javascript'></script>
+    <script src='https://cdn.jsdelivr.net/npm/artplayer/dist/artplayer.js' type='text/javascript'></script>
+    <script src='https://cdn.staticfile.org/jquery/1.10.2/jquery.min.js' type='text/javascript'></script>
+    <script src='./js/yh1.js' type='text/javascript'></script>
+    <link href='./js/y.css' rel='stylesheet'>
+    <style>
+        .bgcode {
+            position: fixed;
+            top: 20px;
+            right: 10px;
+            z-index: 9999;
+            cursor: pointer;
+            color: #fff;
+            padding: 0px;
+            border-radius: 5px;
+            font-size: 16px;
+            line-height: 1;
+        }
+
+        .bgcode:hover {
+            background-color: #0c7cbf;
+        }
+    </style>
+
+</head>
+
+<body>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/08/dyiN5qDyJf3/video/index.m3u8"
+            checked="">第01集$https://top.1080pzy.co/202401/08/dyiN5qDyJf3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/08/8sB4Dqmt2U3/video/index.m3u8"
+            checked="">第02集$https://top.1080pzy.co/202401/08/8sB4Dqmt2U3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/08/2MLW6wiCic3/video/index.m3u8"
+            checked="">第03集$https://top.1080pzy.co/202401/08/2MLW6wiCic3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/09/Ktm3n4XHFQ3/video/index.m3u8"
+            checked="">第04集$https://top.1080pzy.co/202401/09/Ktm3n4XHFQ3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/10/WcfCXQQtWe3/video/index.m3u8"
+            checked="">第05集$https://top.1080pzy.co/202401/10/WcfCXQQtWe3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/10/tJbZ5jM68i3/video/index.m3u8"
+            checked="">第06集$https://top.1080pzy.co/202401/10/tJbZ5jM68i3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/11/EqjFSk18EX3/video/index.m3u8"
+            checked="">第07集$https://top.1080pzy.co/202401/11/EqjFSk18EX3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/11/dYRDsf5iLN3/video/index.m3u8"
+            checked="">第08集$https://top.1080pzy.co/202401/11/dYRDsf5iLN3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/12/T3eYgyxgCM3/video/index.m3u8"
+            checked="">第09集$https://top.1080pzy.co/202401/12/T3eYgyxgCM3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/12/Vn7TkVN0cF3/video/index.m3u8"
+            checked="">第10集$https://top.1080pzy.co/202401/12/Vn7TkVN0cF3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/15/4LCDQWpNeQ3/video/index.m3u8"
+            checked="">第11集$https://top.1080pzy.co/202401/15/4LCDQWpNeQ3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/15/NxhdsEMrkc3/video/index.m3u8"
+            checked="">第12集$https://top.1080pzy.co/202401/15/NxhdsEMrkc3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/16/fsAghrXmwX3/video/index.m3u8"
+            checked="">第13集$https://top.1080pzy.co/202401/16/fsAghrXmwX3/video/index.m3u8</li>
+    <li><input type="checkbox" name="copy_sel" value="https://top.1080pzy.co/202401/16/3ceX4hDu9c3/video/index.m3u8"
+            checked="">第14集$https://top.1080pzy.co/202401/16/3ceX4hDu9c3/video/index.m3u8</li>
+    <div class="bgcode" onclick="bgcode()"><svg t="1689829718315" class="icon" viewBox="0 0 1024 1024" version="1.1"
+            xmlns="http://www.w3.org/2000/svg" p-id="1659" width="40px" height="40px">
+            <path
+                d="M901.12 0H122.88C53.248 0 0 53.248 0 122.88v778.24c0 65.536 53.248 122.88 122.88 122.88h778.24c69.632 0 122.88-57.344 122.88-122.88V122.88c0-69.632-53.248-122.88-122.88-122.88z m81.92 901.12c0 45.056-36.864 81.92-81.92 81.92H122.88c-45.056 0-81.92-36.864-81.92-81.92V122.88c0-45.056 36.864-81.92 81.92-81.92h778.24c45.056 0 81.92 36.864 81.92 81.92v778.24z"
+                fill="#1296db" p-id="1660"></path>
+            <path
+                d="M741.376 471.04l-159.744-90.112-159.744-90.112c-4.096-4.096-8.192-8.192-16.384-8.192-20.48 0-36.864 16.384-36.864 40.96v368.64c0 20.48 16.384 36.864 36.864 36.864 8.192 0 12.288 0 20.48-4.096l159.744-90.112 159.744-90.112c20.48-20.48 20.48-57.344-4.096-73.728z m-180.224 122.88L409.6 684.032V327.68l151.552 90.112 151.552 90.112-151.552 86.016z"
+                fill="#1296db" p-id="1661"></path>
+            <path d="M839.68 839.68m-61.44 0a61.44 61.44 0 1 0 122.88 0 61.44 61.44 0 1 0-122.88 0Z" fill="#1296db"
+                p-id="1662"></path>
+        </svg></div>
+
+</body>
+
+</html>

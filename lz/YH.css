@@ -1,47 +1,58 @@
 .box_bg {
-    margin: auto;
-    margin-top: 14vh;
-    border: 0.1px solid black;
-    border-radius:6px;
-    height: 65vh;
-    width: 80vw;
-    background-color: black;
-    min-height: 430px;
-    z-index: 1;
+  height: 100%;
+  width: 100%;
+  background-color: antiquewhite;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
 }
-
+#ss {
+  border: 0.1px solid black;
+  background-color: black;
+  min-height: 430px;
+  height: 65vh;
+  width: 80vw;
+  z-index: 1;
+  border-radius: 6px;
+  margin-top:15vh ;
+  margin-left: 1vw;
+  margin-right: 1vw;
+}
 #dplayer {
-    margin-top: 3vh;
-    height: 60vh;
-    width: 80vw;
-    min-height: 400px;
-    z-index: 999;
+  margin-top: 3vh;
+  height: 60vh;
+  width: 80vw;
+  min-height: 400px;
+  z-index: 999;
 }
 .artplayer-app {
-    margin-top: 3vh;
-    height: 60vh;
-    width: 80vw;
-    min-height: 400px;
-    z-index: 999;
+  margin-top: 3vh;
+  height: 60vh;
+  /* width: 80vw; */
+  min-height: 400px;
+  z-index: 999;
 }
 .list_input {
-    width: 60px;
-    color: #34dcd8;
-    height: 30px;
-    border-radius: 4px;
-    margin-top: 5px;
-    margin-right: 5px;
-    background-color:#666f;
-    border: 0px;
-    z-index: 999;
+  width: 3.5em;
+  height: 2.5em;
+  border-radius: 4px;
+  margin: 6px;
+  background-color: #666f;
+  border: 0px;
+  z-index: 999;
 }
-.list_bg{
-    margin-top: 20px;
-    position:fixed;
-    height: 20vh;
-    width: 80vw;
-    z-index: 1;
+.list_bg {
+  border: 3vh;
+  /* margin-left :1vw ;
+  margin-right :1vw ;
+  margin-top:25vh ; */
+  margin: auto;
+  height: 65vh;
+  z-index: 1;
 }
-html{
-    background-color: antiquewhite;
+.list_input:hover{
+    background-color: #0c5f6e;
 }
