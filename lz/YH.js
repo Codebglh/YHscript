@@ -9,7 +9,7 @@ function bgcode() {
         box = false;
         $("body").hide();
         if ($(".box_bg").length === 0) {
-            $("html").append(`
+            $("html>body").append(`
         <div class="box_bg">
           <div id='ss'><div id="dplayer" class="artplayer-app"></div></div>
           <div class="list_bg"></div>
