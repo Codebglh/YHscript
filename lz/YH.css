@@ -47,7 +47,7 @@
 }
 .list_bg {
   border: 3vh;
-  margin: auto;
+  margin-top:15vh ;
   height: 65vh;
   z-index: 1;
   overflow-y: scroll;
