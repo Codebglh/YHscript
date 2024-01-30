@@ -43,16 +43,14 @@
   background-color: #666f;
   border: 0px;
   z-index: 999;
-  overflow-y: scroll;
+  
 }
 .list_bg {
   border: 3vh;
-  /* margin-left :1vw ;
-  margin-right :1vw ;
-  margin-top:25vh ; */
   margin: auto;
   height: 65vh;
   z-index: 1;
+  overflow-y: scroll;
 }
 .list_input:hover{
     background-color: #0c5f6e;
