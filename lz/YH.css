@@ -43,6 +43,7 @@
   background-color: #666f;
   border: 0px;
   z-index: 999;
+  overflow-y: scroll;
 }
 .list_bg {
   border: 3vh;
